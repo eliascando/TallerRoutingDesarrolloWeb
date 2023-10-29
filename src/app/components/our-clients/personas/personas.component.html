@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Personas Importantes</h2>
+    <p>Confían en nosotros las personas del momento</p>
+
+    <div class="row">
+        <div class="col-md-3" *ngFor="let cliente of clientes">
+            <div class="card mb-4">
+                <img [src]="cliente.avatar" class="card-img-top" alt="{{ cliente.nombre }} Logo">
+                <div class="card-body">
+                    <p class="card-text">{{ cliente.nombre }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

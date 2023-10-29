@@ -1,0 +1,16 @@
+<div class="container">
+    <h2>Empresas Mundiales</h2>
+    <p>Confían en nosotros algunas de las empresas más grandes y exitosas del mundo:</p>
+
+    <div class="row">
+        <div class="col-md-3" *ngFor="let cliente of clientes">
+            <div class="card mb-4">
+                <img [src]="cliente.logo" class="card-img-top" alt="{{ cliente.nombre }} Logo">
+                <div class="card-body">
+                    <p class="card-text">{{ cliente.nombre }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
